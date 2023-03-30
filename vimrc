@@ -4,8 +4,16 @@ syntax on
 
 colorscheme andrew-light
 
-call pathogen#infect()
-call pathogen#helptags()
+" call pathogen#infect()
+" call pathogen#helptags()
+
+call plug#begin()
+Plug 'tpope/vim-surround'
+Plug 'AndrewRadev/undoquit.vim'
+Plug 'AndrewRadev/andrews_nerdtree.vim'
+Plug 'AndrewRadev/nerdtree'
+Plug 'kana/vim-smartword'
+call plug#end()
 
 set backspace=indent,eol,start
 set clipboard=unnamed,unnamedplus
