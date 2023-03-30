@@ -1,3 +1,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround
+[submodule "bundle/undoquit"]
+	path = bundle/undoquit
+	url = git@github.com:AndrewRadev/undoquit.vim.git
