@@ -4,12 +4,6 @@ syntax on
 
 colorscheme andrew-light
 
-" /home/vim-course/.vim
-" /usr/local/share/vim/vimfiles
-" /usr/local/share/vim/vim90/autoload/
-" /usr/local/share/vim/vimfiles/after
-" /home/vim-course/.vim/after
-
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -54,7 +48,6 @@ set nowritebackup
 set noswapfile
 
 set t_Co=256
-" set termguicolors
 
 nnoremap zj mayyp`aj
 nnoremap zk mayyP`ak
