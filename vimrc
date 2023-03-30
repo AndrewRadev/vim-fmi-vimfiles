@@ -7,47 +7,40 @@ colorscheme andrew-light
 call pathogen#infect()
 call pathogen#helptags()
 
-set wildmenu
-set wildmode=list:longest,full
-set laststatus=2
-set wildoptions=pum
-set expandtab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=8
-
 set backspace=indent,eol,start
-set history=1000
-set ruler
-set showcmd
-
-set nolist
-set listchars=tab:<->
-
-set notimeout
-set ttimeout
-set ttimeoutlen=50
+set clipboard=unnamed,unnamedplus
 set display=truncate
-set scrolloff=0
-set incsearch
-set nrformats-=octal
+set expandtab
+set fillchars=stl:-,stlnc:-,vert:│
+set grepformat=%f:%l:%c:%m
+set grepprg=rg\ --vimgrep\ --hidden
 set guioptions=
-
+set history=1000
+set incsearch
+set laststatus=2
+set listchars=tab:<->
 set mouse=a
-
+set nobackup
+set nolist
+set noswapfile
+set notimeout
+set nowritebackup
+set nrformats-=octal
 set number
+set ruler
+set scrolloff=0
+set shiftwidth=2
+set showcmd
+set softtabstop=2
 set splitbelow
 set splitright
-set clipboard=unnamed,unnamedplus
-
-set fillchars=stl:-,stlnc:-,vert:│
-
-" YOLO
-set nobackup
-set nowritebackup
-set noswapfile
-
 set t_Co=256
+set tabstop=8
+set ttimeout
+set ttimeoutlen=50
+set wildmenu
+set wildmode=list:longest,full
+set wildoptions=pum
 
 nnoremap zj mayyp`aj
 nnoremap zk mayyP`ak
@@ -82,6 +75,3 @@ xnoremap <silent> K 5gk
 nnoremap gm K
 
 nnoremap ! :source %<cr>
-
-set grepprg=rg\ --vimgrep\ --hidden
-set grepformat=%f:%l:%c:%m
