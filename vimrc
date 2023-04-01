@@ -4,17 +4,6 @@ syntax on
 
 colorscheme andrew-light
 
-" call pathogen#infect()
-" call pathogen#helptags()
-
-call plug#begin()
-Plug 'tpope/vim-surround'
-Plug 'AndrewRadev/undoquit.vim'
-Plug 'AndrewRadev/andrews_nerdtree.vim'
-Plug 'AndrewRadev/nerdtree'
-Plug 'kana/vim-smartword'
-call plug#end()
-
 set backspace=indent,eol,start
 set clipboard=unnamed,unnamedplus
 set display=truncate
@@ -53,12 +42,6 @@ set wildoptions=pum
 nnoremap zj mayyp`aj
 nnoremap zk mayyP`ak
 
-let g:netrw_liststyle = 3  " дървовидно
-let g:netrw_banner    = 0  " без банер (`I` го показва)
-let g:netrw_winsize   = 20 " по-малък прозорец
- 
-nnoremap gn :Lex<cr>
-
 inoremap <c-p> <c-r>"
 cnoremap <c-p> <c-r>"
 
@@ -83,3 +66,41 @@ xnoremap <silent> K 5gk
 nnoremap gm K
 
 nnoremap ! :source %<cr>
+
+call plug#begin()
+Plug 'tpope/vim-surround'
+Plug 'AndrewRadev/undoquit.vim'
+Plug 'AndrewRadev/andrews_nerdtree.vim'
+Plug 'AndrewRadev/nerdtree'
+Plug 'kana/vim-smartword'
+Plug 'vim-scripts/Decho'
+call plug#end()
+
+let g:andrews_nerdtree_all = 1
+let g:andrews_nerdtree_external_open_key = 'gu'
+
+" NERDTree:
+let g:NERDTreeHijackNetrw = 0
+" Don't map over J and K
+let g:NERDTreeMapJumpFirstChild = '-'
+let g:NERDTreeMapJumpLastChild  = '-'
+" Don't care about cd-ing to the cwd
+let g:NERDTreeMapCWD = '-'
+" The 's' key is a prefix for a lot of things
+let g:NERDTreeMapOpenVSplit = 'so'
+" I use 'go' for something else and don't use it in the NERDTree
+let g:NERDTreeMapPreview = '-'
+
+nnoremap gn :NERDTreeToggle<cr>
+nnoremap _f :NERDTreeFind<cr>
+
+" Smartword:
+nmap w  <Plug>(smartword-w)
+nmap b  <Plug>(smartword-b)
+nmap e  <Plug>(smartword-e)
+nmap ge <Plug>(smartword-ge)
+
+xmap w  <Plug>(smartword-w)
+xmap b  <Plug>(smartword-b)
+xmap e  <Plug>(smartword-e)
+xmap ge <Plug>(smartword-ge)
