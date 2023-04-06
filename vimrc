@@ -13,11 +13,13 @@ set grepformat=%f:%l:%c:%m
 set grepprg=rg\ --vimgrep\ --hidden
 set guioptions=
 set history=1000
+set hlsearch
 set incsearch
 set laststatus=2
 set listchars=tab:<->
 set mouse=a
 set nobackup
+set noignorecase
 set nolist
 set noswapfile
 set notimeout
@@ -31,6 +33,7 @@ set showcmd
 set softtabstop=2
 set splitbelow
 set splitright
+set statusline=%<%f\ %y%m%r%=%-14.(%l,%c%V%)\ %P
 set t_Co=256
 set tabstop=8
 set ttimeout
@@ -38,6 +41,9 @@ set ttimeoutlen=50
 set wildmenu
 set wildmode=list:longest,full
 set wildoptions=pum
+
+map Q <nop>
+sunmap Q
 
 nnoremap zj mayyp`aj
 nnoremap zk mayyP`ak
@@ -72,6 +78,7 @@ Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/undoquit.vim'
 Plug 'AndrewRadev/andrews_nerdtree.vim'
 Plug 'AndrewRadev/nerdtree'
+Plug 'AndrewRadev/typewriter.vim'
 Plug 'kana/vim-smartword'
 Plug 'vim-scripts/Decho'
 call plug#end()
