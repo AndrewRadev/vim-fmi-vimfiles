@@ -16,7 +16,7 @@ set history=1000
 set hlsearch
 set incsearch
 set laststatus=2
-set listchars=tab:<->
+set listchars+=tab:<->
 set mouse=a
 set nobackup
 set noignorecase
@@ -112,12 +112,12 @@ xmap b  <Plug>(smartword-b)
 xmap e  <Plug>(smartword-e)
 xmap ge <Plug>(smartword-ge)
 
-command! DiffOrig vert new 
-      \ | set bt=nofile 
-      \ | r ++edit # 
-      \ | 0d_ 
+command! DiffOrig vert new
+      \ | set bt=nofile
+      \ | r ++edit #
+      \ | 0d_
       \ | diffthis
-      \ | wincmd p 
+      \ | wincmd p
       \ | diffthis
 
 augroup vimStartup
