@@ -73,6 +73,8 @@ nnoremap gm K
 
 nnoremap ! :source %<cr>
 
+xnoremap * :call visual_star#Run()<cr>
+
 call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/undoquit.vim'
