@@ -67,7 +67,9 @@ hi SpellBad guifg=#ff0000 guibg=NONE guisp=#ff0000 gui=undercurl cterm=underline
 hi SpellCap guifg=#00d700 guibg=NONE guisp=#00d700 gui=undercurl cterm=underline
 hi SpellLocal guifg=#a52a2a guibg=NONE guisp=#a52a2a gui=undercurl cterm=underline
 hi SpellRare guifg=#2e8b57 guibg=NONE guisp=#2e8b57 gui=undercurl cterm=underline
+
 hi Comment guifg=#0000ff guibg=NONE gui=NONE cterm=NONE
+
 hi Constant guifg=#ff00ff guibg=#eeeeee gui=NONE cterm=NONE
 hi Identifier guifg=#008787 guibg=NONE gui=NONE cterm=NONE
 hi Statement guifg=#a52a2a guibg=NONE gui=bold cterm=bold
@@ -139,7 +141,9 @@ if s:t_Co >= 256
   hi SpellCap ctermfg=40 ctermbg=NONE cterm=underline
   hi SpellLocal ctermfg=124 ctermbg=NONE cterm=underline
   hi SpellRare ctermfg=29 ctermbg=NONE cterm=underline
+
   hi Comment ctermfg=246 ctermbg=NONE cterm=NONE
+
   hi Constant ctermfg=28 ctermbg=NONE cterm=NONE
   hi Identifier ctermfg=20 ctermbg=NONE cterm=NONE
   hi Statement ctermfg=124 ctermbg=NONE cterm=bold

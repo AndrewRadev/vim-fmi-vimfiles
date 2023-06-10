@@ -41,6 +41,9 @@ set ttimeoutlen=50
 set wildmenu
 set wildmode=list:longest,full
 set wildoptions=pum
+set shortmess-=S
+set undodir=~/.vimundo
+set undofile
 
 map Q <nop>
 sunmap Q
@@ -83,7 +86,14 @@ Plug 'AndrewRadev/nerdtree'
 Plug 'AndrewRadev/typewriter.vim'
 Plug 'kana/vim-smartword'
 Plug 'vim-scripts/Decho'
+Plug 'lilydjwg/colorizer'
+Plug 'guns/xterm-color-table.vim'
+Plug 'AndrewRadev/whatif.vim'
+Plug 'vim-scripts/AnsiEsc.vim'
+Plug 'Donaldttt/fuzzyy'
 call plug#end()
+
+let g:colorizer_startup = 0
 
 let g:andrews_nerdtree_all = 1
 let g:andrews_nerdtree_external_open_key = 'gu'
